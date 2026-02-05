@@ -1,108 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO básico -->
-  <meta name="description" content="Portafolio de Ramiro Javier Galindo Orozco: proyectos y habilidades en PHP, React, C# y SQLite." />
-  <meta name="author" content="Ramiro Javier Galindo Orozco" />
+    <!-- SEO -->
+    <meta name="description" content="Portafolio personal de Ramiro Javier Galindo Orozco, desarrollador y entusiasta de la programación con experiencia en PHP, ReactJS, C#, SQLite y más.">
+    <meta name="author" content="Ramiro Javier Galindo Orozco">
 
-  <title>Portafolio - Ramiro Javier Galindo Orozco</title>
-  <link rel="stylesheet" href="styles.css" />
+    <title>Portafolio - Ramiro Javier Galindo Orozco</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="site-header" id="inicio">
-    <nav class="nav container" aria-label="Navegación principal">
-      <a class="brand" href="#inicio">RamiroGO</a>
 
-      <ul class="nav-links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-      </ul>
+    <header class="header">
+        <div class="container">
+            <h1>Ramiro Javier Galindo Orozco</h1>
+            <p class="subtitle">Desarrollador y entusiasta de la programación</p>
+        </div>
+    </header>
 
-      <a class="btn btn-ghost" href="https://github.com/RamiroGO" target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
-    </nav>
+    <main>
+        <!-- Sección Sobre mí -->
+        <section class="about container">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un apasionado de la tecnología y el desarrollo de software. 
+                Me interesa aprender y compartir proyectos relacionados con 
+                <strong>PHP, PDO, Ajax, Datatables, Bootstrap, ReactJS y C#</strong>.
+            </p>
+        </section>
 
-    <div class="hero container">
-      <h1>Ramiro Javier Galindo Orozco</h1>
-      <p class="lead">
-        Desarrollador y entusiasta de la programación · PHP · React · C# · SQLite
-      </p>
+        <!-- Proyectos destacados -->
+        <section class="projects container">
+            <h2>Proyectos destacados</h2>
+            <ul class="project-list">
+                <li>
+                    <a href="https://github.com/RamiroGO/Tutorial-Crud-con-PHP-PDO-Ajax-Datatables-y-Bootstrap-5" target="_blank" rel="noopener noreferrer">
+                        Tutorial CRUD con PHP, PDO, Ajax, Datatables y Bootstrap 5
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/RamiroGO/my-app" target="_blank" rel="noopener noreferrer">
+                        ReactJS - Curso práctico para principiantes
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/RamiroGO/Axede_Vehiculo" target="_blank" rel="noopener noreferrer">
+                        Proyecto de Base de Datos en SQLite con C#
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
-        <a class="btn btn-ghost" href="#sobre-mi">Conóceme</a>
-      </div>
-    </div>
-  </header>
+    <footer class="footer">
+        <div class="container">
+            <p>Encuéntrame en 
+                <a href="https://github.com/RamiroGO" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
 
-  <main class="container">
-    <section class="card" id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy un apasionado de la tecnología y el desarrollo de software.
-        Me interesa aprender y compartir proyectos relacionados con
-        <strong>PHP, PDO, Ajax, Datatables, Bootstrap, ReactJS y C#</strong>.
-      </p>
-    </section>
-
-    <section class="card" id="habilidades">
-      <h2>Habilidades</h2>
-      <ul class="tags" aria-label="Tecnologías principales">
-        <li>PHP</li>
-        <li>PDO</li>
-        <li>Ajax</li>
-        <li>Datatables</li>
-        <li>Bootstrap</li>
-        <li>React</li>
-        <li>C#</li>
-        <li>SQLite</li>
-      </ul>
-    </section>
-
-    <section class="card" id="proyectos">
-      <h2>Proyectos destacados</h2>
-
-      <div class="grid">
-        <article class="project">
-          <h3>CRUD con PHP + PDO</h3>
-          <p>Datatables, Ajax y Bootstrap 5.</p>
-          <a class="link" href="https://github.com/RamiroGO/Tutorial-Crud-con-PHP-PDO-Ajax-Datatables-y-Bootstrap-5" target="_blank" rel="noopener noreferrer">
-            Ver repositorio →
-          </a>
-        </article>
-
-        <article class="project">
-          <h3>ReactJS para principiantes</h3>
-          <p>Curso práctico y proyecto base.</p>
-          <a class="link" href="https://github.com/RamiroGO/my-app" target="_blank" rel="noopener noreferrer">
-            Ver repositorio →
-          </a>
-        </article>
-
-        <article class="project">
-          <h3>SQLite con C#</h3>
-          <p>Modelo y operaciones con datos.</p>
-          <a class="link" href="https://github.com/RamiroGO/Axede_Vehiculo" target="_blank" rel="noopener noreferrer">
-            Ver repositorio →
-          </a>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>
-        Encuéntrame en
-        <a href="https://github.com/RamiroGO" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-    </div>
-  </footer>
 </body>
 </html>
