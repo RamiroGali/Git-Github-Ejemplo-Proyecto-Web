@@ -1,3 +1,4 @@
+````markdown
 # Proyecto-Web-Ejemplo
 Proyecto para generar certificado en GitHub en Edutin con Repremundo
 
@@ -46,6 +47,10 @@ echo "segunda línea" >> archivo.txt
 **git branch**: lista las ramas existentes a nivel local
 
 **git branch -vv**: lista las ramas existentes a nivel local con sus respectivos mensajes de commits, referencias de hash, así como sus vínculos a ramas remotas (tracking branch)
+git branch -vv
+### salida ejemplo:
+### * main     91c2fbd [origin/main: ahead 2] Ajustes de estilos
+###   develop  a8e33a1 [origin/develop]       Añadida validación de email
 
 **git branch "nombre-rama"**: Crea una nueva rama de desarrollo, pero sin cambiar la movilización del usuario hacia la edición de esa nueva rama.
 
@@ -72,3 +77,27 @@ echo "segunda línea" >> archivo.txt
 **git checkout --theirs archivo.txt**: Durante un merge con conflictos, acepta los cambios de la rama que se está integrando (incoming changes).
 
 **git checkout --ours archivo.txt**: Durante un merge con conflictos, acepta los cambios de la rama actual (current changes).
+
+### Configurar el remote
+**git remote**: Lista los nombres de los remotes configurados en el repositorio local.
+
+**git remote -v**: Lista los remotes configurados con sus URLs asociadas (fetch y push).
+
+```bash
+git remote -v
+# Salida ejemplo:
+# origin  https://github.com/usuario/repositorio.git (fetch)
+# origin  https://github.com/usuario/repositorio.git (push)
+```
+
+**git remote set-url origin "nueva-url"**: Cambia la URL del remote `origin` a una nueva URL. Se utiliza cuando es necesario corregir la URL del repositorio remoto o migrar a una nueva ubicación.
+
+```bash
+git remote set-url origin "https://github.com/usuario/nuevo-repositorio.git"
+```
+
+**git remote add origin "url"**: Agrega un nuevo remote llamado `origin` con la URL especificada. Se utiliza cuando el repositorio local no tiene configurado un remote y necesita conectarse a un repositorio remoto.
+
+**git remote remove origin**: Elimina la configuración del remote `origin` del repositorio local. Se utiliza cuando ya no es necesario mantener la conexión con ese repositorio remoto.
+
+````
